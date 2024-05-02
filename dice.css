@@ -1,7 +1,14 @@
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
 td {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .diceHeader {
