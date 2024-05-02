@@ -2,26 +2,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DICE ROLLER</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="diceSelect.css">
+    <link rel="stylesheet" href="dice.css">
 </head>
 <body>
-    <h1>Dice Roller</h1>
-    <p>by devinc</p>
+    <div id="titleSection">
+        <h1 id="title" class="inlineBlock">DICE ROLLER</h1>
+        <p id="author" class="inlineBlock">by devinc</p>
+    </div>
 
-    <div>
-        <table id="diceDisplay"></table>
+    <div id="container">
+        <table id="diceDisplay">
+            <tr>
+                <td>
+                    <p class="diceHeader">D4</p>
+                    <button class="diceButton">3</button>
+                </td>
+            </tr>
 
-        <div>
-            <p>Total:</p>
-            <p id="totalCount"></p>
+        </table>
+
+        <div id="totalCountContainer">
+            <p id="total">Total:</p>
+            <p id="totalCount">0</p>
         </div>
 
-        <div>
-            <button id="addDice">+ Add Dice</button>
-            <button id="removeDice">+ Remove Dice</button>
+        <div id="inputContainer">
+            <div id="diceContainer">
+                <label for="diceType" id="diceTypeLabel">Dice Type:   </label>
+                <select name="diceType" id="diceType">
+                    <option value="D4">D4</option>
+                    <option value="D6">D6</option>
+                    <option value="D8">D8</option>
+                    <option value="D10">D10</option>
+                    <option value="D12">D12</option>
+                    <option value="D20">D20</option>
+                </select>
+                <label for="diceCount" id="diceCountLabel">Dice Count:   </label>
+                <input type="number" value="0" id="diceCount" name="diceCount">
+            </div>
+
+            <div id="buttonContainer">
+                <button id="addDice">+ Add Dice</button>
+                <button id="removeDice">+ Remove Dice</button>
+            </div>
 
             <button id="roll">ROLL!!</button>
         </div>
+
+        
+
+        
     </div>
 </body>
 </html>

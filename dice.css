@@ -1,0 +1,16 @@
+td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diceHeader {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.diceButton {
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(226, 80, 80);
+}
