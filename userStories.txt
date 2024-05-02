@@ -1,0 +1,7 @@
+As a user I expect to be able to select the dice type I want to simulate. I want to have the option to select from all the common dice types (4, 6, 8, 10, 12, 20 sided).
+
+As a user I want to be able to roll as many dice as I want, and be able to roll a combination of different types of dice (e.g. two 6 sided dice and one 10 sided dice).
+
+As a user I need to be able to see the value of each dice seperately, and the combined value.
+
+As a user I need the values to be completely random, so that the result is acurate to rolling physical dice.
