@@ -32,26 +32,28 @@
         </div>
 
         <div id="inputContainer">
-            <div id="diceContainer">
-                <label for="diceType" id="diceTypeLabel">Dice Type:   </label>
-                <select name="diceType" id="diceType">
-                    <option value="D4">D4</option>
-                    <option value="D6">D6</option>
-                    <option value="D8">D8</option>
-                    <option value="D10">D10</option>
-                    <option value="D12">D12</option>
-                    <option value="D20">D20</option>
-                </select>
-                <label for="diceCount" id="diceCountLabel">Dice Count:   </label>
-                <input type="number" value="0" id="diceCount" name="diceCount">
+            <div id="allDice">
+                <div id="diceContainer">
+                    <label for="diceType" id="diceTypeLabel">Dice Type:   </label>
+                    <select name="diceType" id="diceType">
+                        <option value="D4">D4</option>
+                        <option value="D6">D6</option>
+                        <option value="D8">D8</option>
+                        <option value="D10">D10</option>
+                        <option value="D12">D12</option>
+                        <option value="D20">D20</option>
+                    </select>
+                    <label for="diceCount" id="diceCountLabel">Dice Count:   </label>
+                    <input type="number" value="0" id="diceCount" name="diceCount">
+                </div>
             </div>
-
+            
             <div id="buttonContainer">
-                <button id="addDice">+ Add Dice</button>
-                <button id="removeDice">+ Remove Dice</button>
+                <button id="addDice" onclick="AddDiceSectionToUi">+ Add Dice</button>
+                <button id="removeDice" onclick="RemoveDiceSectionFromUi">+ Remove Dice</button>
             </div>
 
-            <button id="roll">ROLL!!</button>
+            <button id="roll" onclick="HandleRoll()">ROLL!!</button>
         </div>
 
         

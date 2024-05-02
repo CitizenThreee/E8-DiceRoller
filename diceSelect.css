@@ -1,6 +1,7 @@
 #diceContainer {
     background-color: #bbb;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #diceType {
